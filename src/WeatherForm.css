@@ -1,0 +1,21 @@
+form {
+  display: flex;
+  align-items: center;
+}
+
+.text-input {
+  border: 1px solid #666666;
+  padding: 2px 5px;
+  margin: 12px 4px 12px 12px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.button-input {
+  background-color: #0da0ea;
+  color: white;
+  border-radius: 5px;
+  border: 0px solid transparent;
+  padding: 2.5px 8px;
+  margin: 0 8px 0 0;
+}

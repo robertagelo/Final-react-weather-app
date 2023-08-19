@@ -4,9 +4,10 @@ import {
   faArrowUpLong,
   faArrowDownLong,
   faLocationDot,
-  faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
+import WeatherForm from "./WeatherForm";
+import Footer from "./Footer.js";
 
 function App() {
   return (
@@ -24,16 +25,7 @@ function App() {
             <div className="container weather-container">
               <div className="row">
                 <div className="col-8">
-                  <form>
-                    <input
-                      type="text"
-                      placeholder="What's the weather like in...?"
-                      className="text-input"
-                    />
-                    <button type="submit" className="button-input">
-                      <FontAwesomeIcon icon={faMagnifyingGlass} />
-                    </button>
-                  </form>
+                  <WeatherForm />
                 </div>
                 <div className="col-4 city">
                   <FontAwesomeIcon icon={faLocationDot} />
@@ -133,6 +125,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
