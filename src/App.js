@@ -1,4 +1,11 @@
 import "bootstrap/dist/css/bootstrap.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowUpLong,
+  faArrowDownLong,
+  faLocationDot,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
 function App() {
@@ -8,7 +15,7 @@ function App() {
         <div className="row divider">
           <div className="col-4">
             <img
-              className="img-fluid day-main-img"
+              className="day-main-img"
               src="/city-day-desk.png"
               alt="sunny city"
             />
@@ -16,26 +23,45 @@ function App() {
           <div className="col-8">
             <div className="container weather-container">
               <div className="row">
-                <div className="col-9">
+                <div className="col-8">
                   <form>
                     <input
                       type="text"
                       placeholder="What's the weather like in...?"
+                      className="text-input"
                     />
-                    <input type="submit" class="btn btn-success" />
+                    <button type="submit" className="button-input">
+                      <FontAwesomeIcon icon={faMagnifyingGlass} />
+                    </button>
                   </form>
                 </div>
-                <div className="col-3">Bologna, Italy</div>
+                <div className="col-4 city">
+                  <FontAwesomeIcon icon={faLocationDot} />
+                  Bologna, Italy
+                </div>
               </div>
-              <div className="row">
-                <div className="col-4 main-weather-description">Sunny</div>
+              <div className="row text-center align-items-center">
+                <div className="col-4 main-weather-description">
+                  <img
+                    src="/group.png"
+                    className="img-current"
+                    alt="Current weather icon"
+                  />
+                  Sunny
+                </div>
                 <div className="col-4 main-temp">
-                  33 <span className="main-temp-degrees">°C</span>
+                  33
+                  <span className="main-temp-degrees">°C</span>
                 </div>
                 <div className="col-4 max-min-temp">
-                  Max 35°
+                  Max 35°{"  "}
+                  <FontAwesomeIcon icon={faArrowUpLong} className="arrow-up" />
                   <br />
-                  Min 20°
+                  Min 20°{"  "}
+                  <FontAwesomeIcon
+                    icon={faArrowDownLong}
+                    className="arrow-down"
+                  />
                 </div>
               </div>
               <div className="row">
