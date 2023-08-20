@@ -26,8 +26,12 @@ export default function WeatherForm(props) {
       pressure: response.data.main.pressure,
       wind: response.data.wind.speed,
       feelsLikeTemp: Math.round(response.data.main.feels_like),
-      sunset: response.data.sys.sunset,
-      sunrise: response.data.sys.sunrise,
+      sunset: new Date(response.data.sys.sunset * 1000)
+        .toLocaleString("it-IT", { timeZone: "Europe/Rome" })
+        .slice(11, 16),
+      sunrise: new Date(response.data.sys.sunrise * 1000)
+        .toLocaleString("it-IT", { timeZone: "Europe/Rome" })
+        .slice(11, 16),
     });
   }
 
@@ -68,8 +72,10 @@ export default function WeatherForm(props) {
                   src="/group.png"
                   className="img-current"
                   alt="Current weather icon"
-                />
-                {weatherData.description}
+                />{" "}
+                <span className="text-capitalize">
+                  {weatherData.description}
+                </span>
               </div>
               <div className="col-4 main-temp">
                 {weatherData.currentTemperature}
