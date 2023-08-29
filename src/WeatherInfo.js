@@ -12,7 +12,7 @@ export default function WeatherInfo(props) {
       <div className="row text-center align-items-center">
         <div className="col-4 main-weather-description">
           <img
-            src="/group.png"
+            src={props.info.mainIconUrl}
             className="img-current"
             alt="Current weather icon"
           />{" "}
@@ -73,8 +73,7 @@ export default function WeatherInfo(props) {
           <img className="weather-icon" src="/sunset.png" alt="Sunset icon" />
           {props.info.sunset}
           <br />
-          Sunset <br />
-          <FormattedDate rawDate={props.info.date} />
+          Sunset
         </div>
         <div className="col-4 weather-square">
           {" "}
@@ -83,6 +82,9 @@ export default function WeatherInfo(props) {
           <br />
           Sunrise
         </div>
+      </div>
+      <div className="row">
+        <FormattedDate rawDate={props.info.date} />
       </div>
     </div>
   );

@@ -25,6 +25,7 @@ export default function WeatherForm(props) {
       pressure: response.data.main.pressure,
       wind: response.data.wind.speed,
       feelsLikeTemp: Math.round(response.data.main.feels_like),
+      mainIconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       sunset: new Date(response.data.sys.sunset * 1000)
         .toLocaleString("it-IT", { timeZone: "Europe/Rome" })
         .slice(11, 16),

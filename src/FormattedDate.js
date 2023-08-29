@@ -8,5 +8,5 @@ export default function FormattedDate(props) {
     })
     .slice(1, 16);
 
-  return <div className="formatted-date">Last update:{currentDate}</div>;
+  return <div className="formatted-date">Updated on {currentDate}</div>;
 }

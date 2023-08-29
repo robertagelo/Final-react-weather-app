@@ -2,14 +2,14 @@
   background-color: white;
   border-radius: 20px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-  height: 460px;
+  height: 490px;
   margin-left: -20px;
   position: relative;
   z-index: 1;
 }
 
 .day-main-img {
-  height: 465px;
+  height: 494px;
 }
 
 .col-4,
@@ -32,11 +32,17 @@
   text-align: center;
 }
 
-.weather-icon,
-.img-current {
+.weather-icon {
   display: block;
   margin: 0 auto;
   width: 40px;
+}
+
+.img-current {
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+  filter: grayscale(100%);
 }
 
 .weather-square {
@@ -67,17 +73,18 @@ form {
 }
 
 .text-input {
-  border: 1px solid #666666;
+  border: 0px solid #6666664a;
+  background: #66666614;
   padding: 2px 5px;
-  margin: 12px 4px 12px 12px;
-  border-radius: 5px;
+  margin: 12px 0px 12px 12px;
+  border-radius: 5px 0 0px 5px;
   width: 100%;
 }
 
 .button-input {
   background-color: #0da0ea;
   color: white;
-  border-radius: 5px;
+  border-radius: 0 5px 5px 0;
   border: 0px solid transparent;
   padding: 2.5px 8px;
   margin: 0 8px 0 0;
