@@ -28,15 +28,6 @@
   font-size: 15px;
 }
 
-.city {
-  border-radius: 0 20px;
-  color: #0da0ea;
-  font-size: 18px;
-  line-height: 51px;
-  text-align: center;
-  background-color: #0da0ea17;
-}
-
 .current-temp-section {
   text-align: center;
 }
