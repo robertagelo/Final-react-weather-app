@@ -5,17 +5,14 @@ import {
   faArrowUpLong,
   faArrowDownLong,
 } from "@fortawesome/free-solid-svg-icons";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
     <div>
       <div className="row text-center align-items-center">
         <div className="col-4 main-weather-description">
-          <img
-            src={props.info.mainIconUrl}
-            className="img-current"
-            alt="Current weather icon"
-          />{" "}
+          <WeatherIcon icon={props.info.mainIcon} />
           <span className="text-capitalize">{props.info.description}</span>
         </div>
         <div className="col-4">

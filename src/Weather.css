@@ -42,7 +42,6 @@
   display: block;
   margin: 0 auto;
   width: 90px;
-  filter: grayscale(100%);
 }
 
 .weather-square {
@@ -74,11 +73,15 @@ form {
 
 .text-input {
   border: 0px solid #6666664a;
-  background: #66666614;
+  background: #e9f6fd;
   padding: 2px 5px;
   margin: 12px 0px 12px 12px;
   border-radius: 5px 0 0px 5px;
   width: 100%;
+}
+
+.text-input::placeholder {
+  color: #0da0ea;
 }
 
 .button-input {
