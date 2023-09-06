@@ -6,6 +6,7 @@ import {
   faArrowDownLong,
 } from "@fortawesome/free-solid-svg-icons";
 import WeatherIcon from "./WeatherIcon";
+import Temperatures from "./Temperatures";
 
 export default function WeatherInfo(props) {
   return (
@@ -15,10 +16,8 @@ export default function WeatherInfo(props) {
           <WeatherIcon icon={props.info.mainIcon} />
           <span className="text-capitalize">{props.info.description}</span>
         </div>
-        <div className="col-4">
-          <span className="main-temp"> {props.info.currentTemperature}</span>
-          <span className="main-temp-degrees">°C</span> <br />
-        </div>
+        <Temperatures currentTemperature={props.info.currentTemperature} />
+
         <div className="col-4 max-min-temp">
           Max {props.info.maxTemperature}°C{"  "}
           <FontAwesomeIcon icon={faArrowUpLong} className="arrow-up" />
