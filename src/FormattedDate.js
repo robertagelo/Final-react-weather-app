@@ -6,7 +6,7 @@ export default function FormattedDate(props) {
     .toLocaleString("it-IT", {
       timeZone: "Europe/Rome",
     })
-    .slice(1, 16);
+    .slice(0, 15);
 
   return <div className="formatted-date">Updated on {currentDate}</div>;
 }

@@ -28,10 +28,10 @@ export default function WeatherForm(props) {
       mainIcon: response.data.weather[0].icon,
       sunset: new Date(response.data.sys.sunset * 1000)
         .toLocaleString("it-IT", { timeZone: "Europe/Rome" })
-        .slice(11, 16),
+        .slice(10, 15),
       sunrise: new Date(response.data.sys.sunrise * 1000)
         .toLocaleString("it-IT", { timeZone: "Europe/Rome" })
-        .slice(11, 16),
+        .slice(10, 15),
     });
   }
 
