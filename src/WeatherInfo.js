@@ -49,7 +49,7 @@ export default function WeatherInfo(props) {
           <div className="col-4 weather-square">
             <img
               className="weather-icon"
-              src="/humidity.png"
+              src="https://basmilius.github.io/weather-icons/production/line/all/humidity.svg"
               alt="Humidity icon"
             />
             {props.info.humidity}% <br />
@@ -59,7 +59,7 @@ export default function WeatherInfo(props) {
             {" "}
             <img
               className="weather-icon"
-              src="/barometer.png"
+              src="https://basmilius.github.io/weather-icons/production/line/all/barometer.svg"
               alt="Pressure icon"
             />
             {props.info.pressure} Bar <br />
@@ -67,7 +67,11 @@ export default function WeatherInfo(props) {
           </div>
           <div className="col-4 weather-square">
             {" "}
-            <img className="weather-icon" src="/wind.png" alt="Wind icon" />
+            <img
+              className="weather-icon"
+              src="https://basmilius.github.io/weather-icons/production/line/all/windsock.svg"
+              alt="Wind icon"
+            />
             {props.info.wind} km/h <br />
             Wind
           </div>
@@ -77,7 +81,7 @@ export default function WeatherInfo(props) {
             {" "}
             <img
               className="weather-icon"
-              src="/humidity.png"
+              src="https://basmilius.github.io/weather-icons/production/line/all/thermometer.svg"
               alt="Feels like icon"
             />
             {props.info.feelsLikeTemp}°C <br />
@@ -85,7 +89,11 @@ export default function WeatherInfo(props) {
           </div>
           <div className="col-4 weather-square">
             {" "}
-            <img className="weather-icon" src="/sunset.png" alt="Sunset icon" />
+            <img
+              className="weather-icon"
+              src="https://basmilius.github.io/weather-icons/production/line/all/sunset.svg"
+              alt="Sunset icon"
+            />
             {props.info.sunset}
             <br />
             Sunset
@@ -94,7 +102,7 @@ export default function WeatherInfo(props) {
             {" "}
             <img
               className="weather-icon"
-              src="/sunrise.png"
+              src="https://basmilius.github.io/weather-icons/production/line/all/sunrise.svg"
               alt="Sunrise icon"
             />
             {props.info.sunrise}
@@ -114,6 +122,9 @@ export default function WeatherInfo(props) {
     let fahrenheitFeelsLikeTemp = Math.round(
       (props.info.feelsLikeTemp * 9) / 5 + 32
     );
+    let maxTemp = Math.round(props.info.maxTemperature * 9) / 5 + 32;
+    let minTemp = Math.round(props.info.minTemperature * 9) / 5 + 32;
+
     return (
       <div>
         <div className="row text-center align-items-center">
@@ -132,10 +143,10 @@ export default function WeatherInfo(props) {
             <br />
           </div>
           <div className="col-4 max-min-temp">
-            Max {props.info.maxTemperature}°C{"  "}
+            Max {maxTemp}°F{"  "}
             <FontAwesomeIcon icon={faArrowUpLong} className="arrow-up" />
             <br />
-            Min {props.info.minTemperature}°C{"  "}
+            Min {minTemp}°F{"  "}
             <FontAwesomeIcon icon={faArrowDownLong} className="arrow-down" />
           </div>
         </div>
@@ -143,7 +154,7 @@ export default function WeatherInfo(props) {
           <div className="col-4 weather-square">
             <img
               className="weather-icon"
-              src="/humidity.png"
+              src="https://basmilius.github.io/weather-icons/production/line/all/humidity.svg"
               alt="Humidity icon"
             />
             {props.info.humidity}% <br />
@@ -153,7 +164,7 @@ export default function WeatherInfo(props) {
             {" "}
             <img
               className="weather-icon"
-              src="/barometer.png"
+              src="https://basmilius.github.io/weather-icons/production/line/all/barometer.svg"
               alt="Pressure icon"
             />
             {props.info.pressure} Bar <br />
@@ -161,7 +172,11 @@ export default function WeatherInfo(props) {
           </div>
           <div className="col-4 weather-square">
             {" "}
-            <img className="weather-icon" src="/wind.png" alt="Wind icon" />
+            <img
+              className="weather-icon"
+              src="https://basmilius.github.io/weather-icons/production/line/all/windsock.svg"
+              alt="Wind icon"
+            />
             {props.info.wind} km/h <br />
             Wind
           </div>
@@ -171,15 +186,19 @@ export default function WeatherInfo(props) {
             {" "}
             <img
               className="weather-icon"
-              src="/humidity.png"
+              src="https://basmilius.github.io/weather-icons/production/line/all/thermometer.svg"
               alt="Feels like icon"
             />
-            {fahrenheitFeelsLikeTemp}°C <br />
+            {fahrenheitFeelsLikeTemp}°F <br />
             Feels like
           </div>
           <div className="col-4 weather-square">
             {" "}
-            <img className="weather-icon" src="/sunset.png" alt="Sunset icon" />
+            <img
+              className="weather-icon"
+              src="https://basmilius.github.io/weather-icons/production/line/all/sunset.svg"
+              alt="Sunset icon"
+            />
             {props.info.sunset}
             <br />
             Sunset
@@ -188,7 +207,7 @@ export default function WeatherInfo(props) {
             {" "}
             <img
               className="weather-icon"
-              src="/sunrise.png"
+              src="https://basmilius.github.io/weather-icons/production/line/all/sunrise.svg"
               alt="Sunrise icon"
             />
             {props.info.sunrise}
