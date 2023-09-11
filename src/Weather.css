@@ -8,14 +8,6 @@
   z-index: 1;
 }
 
-.day-main-img {
-  height: 494px;
-}
-
-.day-main-img-mobile {
-  display: none;
-}
-
 .col-4,
 .col-8 {
   padding: 0;
@@ -105,20 +97,11 @@ form {
   .weather-container {
     background-color: white;
     border-radius: 20px 20px 0 0;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     margin: -20px 0 20px 0;
     position: relative;
     z-index: 1;
     padding: 0;
-  }
-
-  .app .day-main-img {
-    display: none;
-  }
-
-  .day-main-img-mobile {
-    display: flex;
-    width: 100%;
   }
 
   .text-input::placeholder {

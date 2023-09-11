@@ -5,6 +5,7 @@ import axios from "axios";
 import "./Weather.css";
 import CityInfo from "./CityInfo";
 import WeatherInfo from "./WeatherInfo";
+import MainImages from "./MainImages";
 
 export default function WeatherForm(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -53,18 +54,7 @@ export default function WeatherForm(props) {
   if (weatherData.ready) {
     return (
       <div className="row divider">
-        <div className="col-sm-4">
-          <img
-            className="day-main-img"
-            src="/city-day-desk.png"
-            alt="sunny city"
-          />
-          <img
-            className="day-main-img-mobile"
-            src="/city-day.png"
-            alt="sunny city"
-          />
-        </div>
+        <MainImages />
         <div className="col-sm-8">
           <div className="container weather-container">
             <div className="row">

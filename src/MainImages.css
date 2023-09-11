@@ -1,0 +1,21 @@
+.main-img {
+  height: 494px;
+}
+
+.main-img-mobile {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .main-img {
+    display: none;
+  }
+
+  .main-img-mobile {
+    display: flex;
+    width: 100%;
+  }
+  .col-sm-4 {
+    padding: 0;
+  }
+}

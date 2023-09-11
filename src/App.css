@@ -13,3 +13,9 @@ body {
   transition: all 300ms ease-in-out;
   max-width: 850px;
 }
+
+@media (max-width: 576px) {
+  body {
+    background: white;
+  }
+}
