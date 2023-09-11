@@ -4,7 +4,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer>
-      Proudly made using{" "}
+      Proudly handcrafted 💝 using{" "}
       <a
         href="https://github.com/robertagelo/Final-react-weather-app"
         target="_blank"
@@ -12,7 +12,7 @@ export default function Footer() {
       >
         this open source code{" "}
       </a>
-      S by Roberta.
+      by Roberta Gelo.
     </footer>
   );
 }

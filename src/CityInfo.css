@@ -6,3 +6,9 @@
   text-align: center;
   background-color: #0da0ea17;
 }
+
+@media (max-width: 576px) {
+  .city {
+    font-size: 15px;
+  }
+}

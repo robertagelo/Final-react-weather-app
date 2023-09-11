@@ -12,6 +12,10 @@
   height: 494px;
 }
 
+.day-main-img-mobile {
+  display: none;
+}
+
 .col-4,
 .col-8 {
   padding: 0;
@@ -19,13 +23,13 @@
 
 .main-temp {
   color: black;
-  font-size: 55px;
+  font-size: 58px;
 }
 
 .main-temp-degrees,
 .max-min-temp {
   color: #666666;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .current-temp-section {
@@ -91,4 +95,42 @@ form {
   border: 0px solid transparent;
   padding: 2.5px 8px;
   margin: 0 8px 0 0;
+}
+
+@media (max-width: 576px) {
+  body {
+    padding: 0;
+  }
+
+  .weather-container {
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin: -20px 0 20px 0;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+  }
+
+  .app .day-main-img {
+    display: none;
+  }
+
+  .day-main-img-mobile {
+    display: flex;
+    width: 100%;
+  }
+
+  .text-input::placeholder {
+    font-size: 14px;
+  }
+
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+  .app {
+    margin: 0;
+    padding: 0;
+  }
 }

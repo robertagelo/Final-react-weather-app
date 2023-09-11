@@ -28,10 +28,10 @@ export default function WeatherForm(props) {
       mainIcon: response.data.weather[0].icon,
       sunset: new Date(response.data.sys.sunset * 1000)
         .toLocaleString("it-IT", { timeZone: "Europe/Rome" })
-        .slice(10, 15),
+        .slice(10, 16),
       sunrise: new Date(response.data.sys.sunrise * 1000)
         .toLocaleString("it-IT", { timeZone: "Europe/Rome" })
-        .slice(10, 15),
+        .slice(10, 16),
     });
   }
 
@@ -59,6 +59,11 @@ export default function WeatherForm(props) {
             src="/city-day-desk.png"
             alt="sunny city"
           />
+          <img
+            className="day-main-img-mobile"
+            src="/city-day.png"
+            alt="sunny city"
+          />
         </div>
         <div className="col-sm-8">
           <div className="container weather-container">
@@ -67,7 +72,7 @@ export default function WeatherForm(props) {
                 <form onSubmit={handleSubmit}>
                   <input
                     type="text"
-                    placeholder="What's the weather like in...?"
+                    placeholder="What's the weather like in..."
                     className="text-input"
                     onChange={changeCity}
                   />
