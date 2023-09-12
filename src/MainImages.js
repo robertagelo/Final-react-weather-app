@@ -6,7 +6,7 @@ export default function MainImages() {
   const currentTime = new Date().getHours();
 
   // Conditionally display different images based on the time
-  if (currentTime < 12) {
+  if (currentTime < 19) {
     return (
       <div className="col-sm-4">
         <img className="main-img" src="/city-day-desk.png" alt="sunny city" />

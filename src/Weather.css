@@ -2,7 +2,7 @@
   background-color: white;
   border-radius: 20px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-  height: 490px;
+  height: 645px;
   margin-left: -20px;
   position: relative;
   z-index: 1;
@@ -94,6 +94,10 @@ form {
     padding: 0;
   }
 
+  form {
+    margin-left: 5px;
+  }
+
   .weather-container {
     background-color: white;
     border-radius: 20px 20px 0 0;
@@ -108,10 +112,6 @@ form {
     font-size: 14px;
   }
 
-  .row {
-    margin: 0;
-    padding: 0;
-  }
   .app {
     margin: 0;
     padding: 0;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Forecast from "./Forecast";
 import FormattedDate from "./FormattedDate";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -110,6 +111,7 @@ export default function WeatherInfo(props) {
             Sunrise
           </div>
         </div>
+        <Forecast />
         <div className="row">
           <FormattedDate rawDate={props.info.date} />
         </div>
@@ -214,7 +216,8 @@ export default function WeatherInfo(props) {
             <br />
             Sunrise
           </div>
-        </div>
+        </div>{" "}
+        <Forecast />
         <div className="row">
           <FormattedDate rawDate={props.info.date} />
         </div>
