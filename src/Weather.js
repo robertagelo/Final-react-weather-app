@@ -15,6 +15,7 @@ export default function WeatherForm(props) {
     setWeatherData({
       ready: true,
       city: response.data.name,
+      coordinates: response.data.coord,
       description: response.data.weather[0].description,
       date: response.data.dt,
       icon: response.data.weather[0].icon,

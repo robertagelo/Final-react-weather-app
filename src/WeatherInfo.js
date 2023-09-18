@@ -111,7 +111,7 @@ export default function WeatherInfo(props) {
             Sunrise
           </div>
         </div>
-        <Forecast />
+        <Forecast coordinates={props.info.coordinates} />
         <div className="row">
           <FormattedDate rawDate={props.info.date} />
         </div>
@@ -217,7 +217,7 @@ export default function WeatherInfo(props) {
             Sunrise
           </div>
         </div>{" "}
-        <Forecast />
+        <Forecast coordinates={props.info.coordinates} />
         <div className="row">
           <FormattedDate rawDate={props.info.date} />
         </div>

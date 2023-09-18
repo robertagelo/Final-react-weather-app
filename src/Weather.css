@@ -2,7 +2,7 @@
   background-color: white;
   border-radius: 20px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-  height: 645px;
+  height: 720px;
   margin-left: -20px;
   position: relative;
   z-index: 1;
@@ -42,7 +42,7 @@
 
 .weather-square {
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .main-temp-degrees {
@@ -70,8 +70,8 @@ form {
 .text-input {
   border: 0px solid #6666664a;
   background: #e9f6fd;
-  padding: 2px 5px;
-  margin: 12px 0px 12px 12px;
+  padding: 2px 7px;
+  margin: 12px 0px 12px 18px;
   border-radius: 5px 0 0px 5px;
   width: 100%;
 }
