@@ -18,10 +18,10 @@ export default function Forecast(props) {
 
   if (loaded) {
     return (
-      <div>
+      <div className="row">
         <ul>
           {forecast.map(function (dailyForecast, index) {
-            if (index < 6) {
+            if (index > 0 && index < 6) {
               return (
                 <li
                   className="forecast-square rounded shadow col-12 col-sm-6 col-lg-4 col-xl-3"

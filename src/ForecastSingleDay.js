@@ -12,20 +12,20 @@ export default function ForecastSingleDay(props) {
   let day = new Date(props.dailyForecast.time * 1000).getDate();
 
   return (
-    <div>
+    <div className="mb-2">
       <ForecastWeatherIcon icon={props.dailyForecast.condition.icon} />
       <span className="forecastDate">
         {weekDays[weekDay]}, {day}
       </span>
       <br />
-      <span className="forecast-temp">
+      <span className="forecast-max-temp">
         {" "}
-        Max {Math.round(props.dailyForecast.temperature.maximum)}°C{"  "}
+        {Math.round(props.dailyForecast.temperature.maximum)}°C{"  "}
         <FontAwesomeIcon icon={faArrowUpLong} className="arrow-up" />
       </span>
-      <br />
-      <span className="">
-        Min {Math.round(props.dailyForecast.temperature.minimum)}°C{"  "}
+      {"  "}
+      <span className="forecast-min-temp">
+        {Math.round(props.dailyForecast.temperature.minimum)}°C{"  "}
         <FontAwesomeIcon icon={faArrowDownLong} className="arrow-down" />
       </span>
     </div>

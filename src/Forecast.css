@@ -8,9 +8,18 @@ ul {
 }
 
 ul .forecast-square {
-  margin: 10px;
-  width: 120px;
+  margin: 5px;
+  width: 90px;
   text-align: center;
+}
+
+ul .forecast-max-temp,
+ul .forecast-min-temp {
+  font-size: 15px;
+}
+
+ul .forecast-min-temp {
+  color: #212529b4;
 }
 
 .forecast-image {
@@ -23,6 +32,7 @@ ul .forecast-square {
   ul {
     flex-wrap: nowrap;
     align-items: flex-end;
+    justify-content: normal;
     overflow-x: scroll;
   }
 
