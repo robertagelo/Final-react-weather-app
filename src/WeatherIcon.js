@@ -8,7 +8,7 @@ export default function WeatherIcon(props) {
     "04d": "overcast-day",
     "09d": "rain",
     "10d": "rain",
-    "11d": "thunderstorm-day",
+    "11d": "thunderstorms-day",
     "13d": "snow",
     "50d": "fog",
     "01n": "clear-night",

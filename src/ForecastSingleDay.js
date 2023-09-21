@@ -4,21 +4,30 @@ import {
   faArrowUpLong,
   faArrowDownLong,
 } from "@fortawesome/free-solid-svg-icons";
+import ForecastWeatherIcon from "./ForecastWeatherIcon";
 
 export default function ForecastSingleDay(props) {
+  let weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let weekDay = new Date(props.dailyForecast.time * 1000).getDay();
+  let day = new Date(props.dailyForecast.time * 1000).getDate();
+
   return (
-    <li className="forecast-square rounded shadow col-12 col-sm-6 col-lg-4 col-xl-3">
-      <img
-        src="https://basmilius.github.io/weather-icons/production/line/all/clear-day.svg"
-        className="forecast-image"
-        alt="Forecast"
-      />
-      Mon, 12.09
+    <div>
+      <ForecastWeatherIcon icon={props.dailyForecast.condition.icon} />
+      <span className="forecastDate">
+        {weekDays[weekDay]}, {day}
+      </span>
       <br />
-      Max {Math.round(props.dailyForecast.temperature.maximum)}°C{"  "}
-      <FontAwesomeIcon icon={faArrowUpLong} className="arrow-up" />
-      Min {Math.round(props.dailyForecast.temperature.minimum)}°C{"  "}
-      <FontAwesomeIcon icon={faArrowDownLong} className="arrow-down" />
-    </li>
+      <span className="forecast-temp">
+        {" "}
+        Max {Math.round(props.dailyForecast.temperature.maximum)}°C{"  "}
+        <FontAwesomeIcon icon={faArrowUpLong} className="arrow-up" />
+      </span>
+      <br />
+      <span className="">
+        Min {Math.round(props.dailyForecast.temperature.minimum)}°C{"  "}
+        <FontAwesomeIcon icon={faArrowDownLong} className="arrow-down" />
+      </span>
+    </div>
   );
 }
