@@ -58,7 +58,7 @@ export default function WeatherForm(props) {
         <MainImages />
         <div className="col-sm-8">
           <div className="container weather-container">
-            <div className="row">
+            <div className="row city-container">
               <div className="col-8">
                 <form onSubmit={handleSubmit}>
                   <input

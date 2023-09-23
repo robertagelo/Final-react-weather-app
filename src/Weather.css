@@ -8,8 +8,8 @@
   z-index: 1;
 }
 
-.col-4,
-.col-8 {
+.col-4-sm,
+.col-8-sm {
   padding: 0;
 }
 
@@ -98,6 +98,14 @@ form {
     margin-left: 5px;
   }
 
+  .city-container {
+    margin-right: 0;
+  }
+
+  .col-sm-8 {
+    padding-right: 0;
+  }
+
   .weather-container {
     background-color: white;
     border-radius: 20px 20px 0 0;
@@ -115,5 +123,9 @@ form {
   .app {
     margin: 0;
     padding: 0;
+  }
+
+  .row {
+    margin-right: 0;
   }
 }

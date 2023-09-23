@@ -31,7 +31,7 @@ export default function WeatherInfo(props) {
           {"  "}
         </div>
       </div>
-      <div className="row">
+      <div className="row ">
         <div className="col-4 weather-square">
           <img
             className="weather-icon"
