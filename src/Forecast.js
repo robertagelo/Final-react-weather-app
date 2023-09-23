@@ -21,7 +21,7 @@ export default function Forecast(props) {
       <div className="row">
         <ul>
           {forecast.map(function (dailyForecast, index) {
-            if (index < 5) {
+            if (index < 6 && index > 0) {
               return (
                 <li className="forecast-square rounded shadow col-12 col-sm-6 col-lg-4 col-xl-3">
                   <ForecastSingleDay dailyForecast={dailyForecast} />
