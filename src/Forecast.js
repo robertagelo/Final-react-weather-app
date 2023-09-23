@@ -14,7 +14,7 @@ export default function Forecast(props) {
 
   useEffect(() => {
     setLoaded(false);
-  }, [props]);
+  }, [props.coordinates]);
 
   if (loaded) {
     return (
@@ -23,10 +23,7 @@ export default function Forecast(props) {
           {forecast.map(function (dailyForecast, index) {
             if (index < 5) {
               return (
-                <li
-                  className="forecast-square rounded shadow col-12 col-sm-6 col-lg-4 col-xl-3"
-                  key="index"
-                >
+                <li className="forecast-square rounded shadow col-12 col-sm-6 col-lg-4 col-xl-3">
                   <ForecastSingleDay dailyForecast={dailyForecast} />
                 </li>
               );

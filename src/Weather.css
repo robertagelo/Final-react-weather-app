@@ -2,7 +2,7 @@
   background-color: white;
   border-radius: 20px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-  height: 590px;
+  height: 620px;
   margin-left: -20px;
   position: relative;
   z-index: 1;
@@ -31,7 +31,7 @@
 .weather-icon {
   display: block;
   margin: 0 auto;
-  width: 40px;
+  width: 55px;
 }
 
 .img-current {
@@ -52,7 +52,7 @@
 
 .arrow-up {
   color: #666666;
-  font-size: 9px;
+  font-size: 8px;
   position: relative;
   top: -6px;
 }

@@ -21,11 +21,14 @@ export default function WeatherInfo(props) {
           <span className="main-temp-degrees">°C</span> <br />
         </div>
         <div className="col-4 max-min-temp">
-          Max {props.info.maxTemperature}°C{"  "}
           <FontAwesomeIcon icon={faArrowUpLong} className="arrow-up" />
+          {"  "}
+          Max {props.info.maxTemperature}°C
           <br />
-          Min {props.info.minTemperature}°C{"  "}
           <FontAwesomeIcon icon={faArrowDownLong} className="arrow-down" />
+          {"  "}
+          Min {props.info.minTemperature}°C{"  "}
+          {"  "}
         </div>
       </div>
       <div className="row">

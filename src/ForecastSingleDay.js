@@ -20,13 +20,13 @@ export default function ForecastSingleDay(props) {
       <br />
       <span className="forecast-max-temp">
         {" "}
-        {Math.round(props.dailyForecast.temperature.maximum)}°C{"  "}
         <FontAwesomeIcon icon={faArrowUpLong} className="arrow-up" />
+        {Math.round(props.dailyForecast.temperature.maximum)}°C{"  "}
       </span>
-      {"  "}
+      {"     "}
       <span className="forecast-min-temp">
-        {Math.round(props.dailyForecast.temperature.minimum)}°C{"  "}
         <FontAwesomeIcon icon={faArrowDownLong} className="arrow-down" />
+        {Math.round(props.dailyForecast.temperature.minimum)}°C{"  "}
       </span>
     </div>
   );
